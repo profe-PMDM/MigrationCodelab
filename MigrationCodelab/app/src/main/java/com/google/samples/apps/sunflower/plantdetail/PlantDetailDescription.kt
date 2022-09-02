@@ -16,6 +16,7 @@
 
 package com.google.samples.apps.sunflower.plantdetail
 
+import android.content.res.Configuration
 import android.text.method.LinkMovementMethod
 import android.widget.TextView
 import androidx.compose.foundation.layout.*
@@ -127,6 +128,7 @@ fun PlantDescription(description: String) {
 
 @Composable
 @Preview
+@Preview(uiMode = Configuration.UI_MODE_NIGHT_YES)
 fun PlantDetailContentPreview() {
     val plant = Plant("id", "Apple", "HTML<br><br>description", 3, 30, "")
     PlantName(name = plant.name)
